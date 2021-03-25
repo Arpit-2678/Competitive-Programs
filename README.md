@@ -1,2 +1,2 @@
 # Competitive-Programs
-Some codes that would help to increase coding knowledge
+Some codes that would help you to increase your coding knowledge

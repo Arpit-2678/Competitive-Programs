@@ -1,3 +1,5 @@
+/*  LINK=https://cses.fi/problemset/task/1621/   */
+
 #include<bits/stdc++.h>
 #define ll long long int
 #define test while(t--)

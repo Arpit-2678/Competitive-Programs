@@ -12,8 +12,13 @@ public:
        
         int pos=0,pos2=0;
         int maxii=INT_MIN;
+        int k=1;
         for(int i=0;i<arr.size();i++)
         {
+            if (k<arr.size() and arr[k++]==arr[i])
+            {
+                return false;
+            }
             if(arr[i]>maxii)
             {
                 maxii=arr[i];
@@ -30,15 +35,7 @@ public:
         }
         if(pos!=pos2)
             return false;
-         if(is_sorted(arr.begin(),arr.end()))
-            return false;
-        vector<int>v(arr);
-        reverse(v.begin(),v.end());
-         if(is_sorted(v.begin(),v.end()))
-            return false;
-        auto it=unique(v.begin(),v.end());
-        v.resize(distance(v.begin(),it));
-        if(v.size()!=arr.size())
+         if(pos==0 or pos==arr.size()-1)
             return false;
         
         int flag=0;

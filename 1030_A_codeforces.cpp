@@ -1,6 +1,7 @@
 // LINK=https://codeforces.com/problemset/problem/1030/A
 
 
+// ALL THE BEST
 
 #include<bits/stdc++.h>
 #define ll long long int

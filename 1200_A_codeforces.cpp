@@ -1,13 +1,13 @@
 // LINK= https://codeforces.com/problemset/problem/1220/A
 
 #include<bits/stdc++.h>
-#define fastio ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+//#define fastio 
 #define endl "\n"
 #define lli long long int
 
 using namespace std;
 int main()
-{    fastio;
+{    ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
  int n;
  cin>>n;
  string str;

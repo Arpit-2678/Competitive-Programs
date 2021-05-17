@@ -81,15 +81,7 @@ ll  gcd(ll u, ll v)
     } while (v != 0);
     return u << shift;
 }
-// ll arr[1000000]{0};
-//   void make_array()
-//   {
-//       for(int i=1;i<=1000000;i++)
-//       {
-//           arr[i-1]=(i*i);
-//       }
-//   }
-//int brr[1000009]{0};  
+
 bool is_prime(ll num)
 {      if(num==1)
       return false;

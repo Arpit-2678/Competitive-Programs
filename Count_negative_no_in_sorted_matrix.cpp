@@ -12,25 +12,19 @@ public:
        }
        else
        {
-       for(int i=0;i<grid.size();i++)
+              int i=0,j=grid[0].size()-1;
+       for(;j>=0 and i<grid.size();)
        {
-           for(int j=0;j<grid[i].size();j++)
+          if(grid[i][j]<0)
+          {
+              cnt+=grid.size()-i;
+              j--;
+          }
+           else if(grid[i][j]>=0)
            {
-                  if(grid[i][grid[i].size()-1]>=0)
-                  {
-                       break;
-                  }
-               else if(grid[i][0]<0)
-               {
-                    cnt+=grid[i].size();
-                   break;
-               }
-               else if(grid[i][j]<0)
-               {
-                   cnt+=grid[i].size()-j;
-                   break;
-               }
+               i++;
            }
+       
        }
        }
        return cnt;

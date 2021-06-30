@@ -7,7 +7,6 @@ public:
         ios_base::sync_with_stdio(0);
         cin.tie(0);
         int i=0,j=0,ans=INT_MIN;
-        unordered_map<int,int>ump;
         if(k==0)
         {
             int res=0,cnt=0;
@@ -24,36 +23,26 @@ public:
             }
             return res;
         }
+        int z_cnt=0;
         while(j<nums.size())
         {
-            ump[nums[j]]++;
-            // if(ump[0]<k)
-            // {
-            //     j++;
-            // }
-             if(ump[0]<=k)
+              if(nums[j]==0)
+                  z_cnt++;
+             if(z_cnt<=k)
             {
                 ans=max(ans,j-i+1);
                 j++;
             }
             else
             {
-                while(ump[0]>k)
+                while(z_cnt>k)
                 {
-                    ump[nums[i]]--;
-                    if(ump[nums[i]]==0)
-                        ump.erase(nums[i]);
+                    if(nums[i]==0)
+                        z_cnt--;
                     i++;
                 }
                 j++;
             }
-        }
-        if(ump.size()==1)
-        {
-            if((ump.begin()->first)==1)
-                return ump.size();
-            else
-                return k;
         }
         return ans;
         

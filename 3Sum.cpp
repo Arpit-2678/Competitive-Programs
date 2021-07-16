@@ -42,9 +42,6 @@ public:
             
         }
     }
-        sort(res.begin(),res.end());
-        auto it=unique(res.begin(),res.end());
-        res.resize(distance(res.begin(),it));
     return res;
        
         

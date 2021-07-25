@@ -58,9 +58,10 @@ void print_Tree(Node*root)
 {
   if(root==nullptr)
   return;
-  cout<<root->data<<" ";
+
   print_Tree(root->left);
-  print_Tree(root->right);
+  cout<<root->data<<" ";
+//  print_Tree(root->right);
 
 }
 int main(int argc, char const *argv[]) {
@@ -70,7 +71,8 @@ int main(int argc, char const *argv[]) {
     for(int i=0;i<n;i++)
     cin>>arr[i];
      Node *root=buildTreeArray(arr,0,n-1);
-     bfs(root);
-    // print_Tree(root);
+    bfs(root);
+    cout<<"\n";
+     print_Tree(root);
   return 0;
 }

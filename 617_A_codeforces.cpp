@@ -1,4 +1,4 @@
-// LINK=https://codeforces.com/contest/617/problem/A
+//  LINK=https://codeforces.com/contest/617/problem/A
 
 #include<bits/stdc++.h>
 using namespace std;

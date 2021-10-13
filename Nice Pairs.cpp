@@ -1,4 +1,4 @@
-// LINK=https://www.codechef.com/START15B/problems/NPAIRS
+//  LINK=https://www.codechef.com/START15B/problems/NPAIRS
 
 
 #include <ext/pb_ds/assoc_container.hpp>

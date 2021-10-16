@@ -35,25 +35,7 @@ ll binpow(ll a, ll b)
     }
     return (res%inf);
 }
-//  for calculating gcd.. 
-ll  gcd(ll u, ll v)
-{
-    ll shift;
-    if (u == 0) return v;
-    if (v == 0) return u;
-    shift = __builtin_ctz(u | v);
-    u >>= __builtin_ctz(u);
-    do {
-        v >>= __builtin_ctz(v);
-        if (u > v) {
-          ll t = v;
-            v = u;
-            u = t;
-        }  
-        v = v - u;
-    } while (v != 0);
-    return u << shift;
-}
+
 //  for converting string to uppercase....
 string to_upper(string a)
 {

@@ -29,13 +29,7 @@ ll binpow(ll a, ll b)
     }
     return res;
 }
-//  for calculating gcd.. 
-ll gcd(ll a,ll b)
-{
-    if (b==0) return a;
-    return gcd(b,a%b);
-}
-//  for converting string to uppercase....
+
 string to_upper(string a)
 {
     for (int i=0;i<(int)a.size();++i) if (a[i]>='a' && a[i]<='z') a[i]-='a'-'A';
